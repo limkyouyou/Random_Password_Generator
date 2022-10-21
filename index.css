@@ -1,0 +1,112 @@
+@font-face { /* specifiy a custom font */
+    src: url("Inter.ttf"); /* define the link to the custom font */
+    font-family: inter; /* define the name of the custom font */
+}
+@font-face { /* specify a custom font */
+    src: url("Karla-ExtraBold.ttf"); /* define the link to the custom font */
+    font-family: karla; /* define the name of the custom font */
+}
+
+body { /* define the body selector */
+    background-color: #1C1C1C; /* decalre the default background color of the document */
+    font-family: inter; /* declare the default font of the document */
+    margin: 0; /* declare the default margin of the document */
+}
+
+#background { /* define the background id selector */
+    position: absolute; /* declare the position to be relative to the viewport */
+    top: 50%; /* declare its postition 50% from the top */
+    left: 50%; /* declare its position 50% from the left */
+    transform: translate(-50%, -50%); /* declare the central axis to be at the center of the element instead of top right point */
+    background-color: #1F2937; /* declare the element's background color */
+    width: 550px; /* declare the element's width size */
+    height: 550px; /* declare the element's height size */
+}
+
+h1 { /* define the h1 selector */
+    font-family: karla; /* declare the element's font */
+    font-size: 40px; /* declare the element's font size */
+    font-weight: 800; /* declare the boldness of the element's font */
+    line-height: 40px; /* declare the element's font margin, when line-height = font-size, then 0 margin */
+    color: #FFFFFF; /* declare the element's font color */
+    margin-top: 115px; /* declare the element's margin from the top */
+    margin-left: 52px; /* declare the element's margin from the left */
+    margin-bottom: 5px; /* declare the element's margin from the bottom */
+}
+
+h3 { /* define the h3 selector */
+    font-size: 20px; /* declare the element's font size */
+    font-weight: 400; /* declare the boldness of the element's font */
+    line-height: 28px; /* declare the element's font margin */
+    color: #D5D4D8; /* declare the element's font color */
+    margin-top: 5px; /* declare the element's margin from the top */
+    margin-left: 52px; /* declare the element's margin from the left */
+    margin-bottom: 0px; /* declare the element's margin from the bottom */
+}
+
+.controlpanel { /*define the controlpanel class selector */
+    display: flex; /* declare the element to display as a flex container */
+    flex-direction: row; /* declare the items in the container are placed horizontally */
+}
+
+.genbtn { /* define the genbtn class selector */
+    font-size: 16px; /* declare the element's font size */
+    font-weight: 500; /* declare the boldness of the element's font */
+    line-height: 24px; /* declare the element's font margin */
+    color: #FFFFFF; /* declare the element's font color */
+    background-color: #10B981; /* declare the element's background color */
+    margin-top: 52px; /* declare the element's margin from the top */
+    margin-bottom: 36px; /* declare the element's margin from the bottom */
+    margin-left: 52px; /* declare the element's margin from the left */
+    padding: 9px 15px; /* declare the element's padding size */
+    border: none; /* declare the element's border style */
+    border-radius: 6px; /* declare the value of the corners of the element's border */
+}
+
+.custom { /* define the custom class selector */
+    width: 190px; /* declare the element's width size */
+    background-color: #273549; /* declare the element's background color */
+    border-radius: 6px; /* declare the value of the corners of the element's border */
+    padding: 10px; /* declare the element's padding size */
+    margin-left: 48px; /* declare the element's margin from the left */
+    margin-top: 20px; /* declare the element's margin from the top */
+}
+
+.select { /* define the select class selector */
+    width: 55px; /* declare the element's width size */
+    float: right; /* declare the element to be placed from the right*/
+}
+
+.label { /* define the label class selector */
+    color: white; /*declare the element's font color */
+}
+
+hr { /* define the horizontal line selector */
+    width: 446px; /* declare the element's width size */
+    text-align: center; /* declare the element to be aligned to the center */
+}
+
+.passwordbtn { /* define the passwordbtn class selector */
+    font-size: 16px; /* declare the element's font size */
+    font-weight: 500; /* declare the boldness of the element's font */
+    line-height: 32px; /* declare the margin of the element's font */
+    color: #55F991; /* declare the element's font color */
+    background-color: #273549; /* declare the element's background color */
+    margin-top: 35px; /*declare the element's margin from the top */
+    margin-right: 20px; /* declare the element's margin from the right */
+    width: 211px; /* declare the element's width size */
+    height: 39px; /* declare the element's height size */
+    padding: 4px; /* delcare the element's padding size */
+    border: none; /* declare the element's border style */
+    border-radius: 6px; /* declare the value of the corder of the element's border */
+}
+
+.passwordbtn:not(:last-child) { /* define the passwordbtn class but not the last element of the same class */
+    margin-left: 52px; /* declare the element's margin from the left */
+}
+
+.copy { /* define the copy class selector */
+    margin-top: 15px; /* declare the element's margin from the top */
+    font-size: 15px; /* declare the element's font size */
+}
+

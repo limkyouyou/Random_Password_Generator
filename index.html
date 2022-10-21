@@ -1,0 +1,61 @@
+<!DOCUTYPE html> <!-- delcare the document type -->
+<html lang="en-US"> <!-- declare the root element and the language -->
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> <!-- declare the head element and the link to the Content Delivery Netword -->
+    <title>Scrimba Random Password Generator Project</title> <!-- declare the title of the document -->
+    <meta charset="UTF-18"> <!-- declare the character set of the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- declare the user's visible area of the web page to fit the user's device and define its default zoom level -->
+    <meta name="description" content="This is the second Scrimba project from their free JavaScript course"> <!-- declare the description of the document -->
+    <meta name="author" content="Kyo young Lim"> <!-- declare the the author of the document -->
+    <link rel="icon" href="lock_icon.png" type="image/x-icon"> <!-- declare the favicon and link to the image -->
+    <link rel="stylesheet" href="index.css"> <!-- declare the external CSS and its reference -->
+    </head>
+    
+    <body> <!-- declare the body element -->
+        <div id="background"> <!-- declare the div element with id -->
+            <h1>Generate a<br><!-- declare a line break element --><span style="font-family:inter;color:#4ADF86;">random password</span> <!-- declare a span element to specify a style for a certain text content --></h1> <!-- declare a h1 element and its text content -->
+            <h3>Never use an insecure password again.</h3> <!-- declare a h3 element and its text content -->
+            <div class="controlpanel"> <!-- declare a div element with class -->
+                <button class="genbtn" onclick="generate()">Generate Passwords</button> <!-- declare a button element with class and onclick event, its outcome, and the element's text content -->
+                <div class="custom"> <!-- declare a div element with class -->
+                    <label class="label" for="length-el">Character Count:</label> <!-- declare a label element with class, an associated element, and its text content -->
+                    <select class="select" id="length-el"> <!-- declare a select element with class and id -->
+                        <option value="1">1</option> <!-- declare option elements with value for the above select element -->
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option vaule="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                    <br><br> <!-- declare a line break element -->
+                    <label class="label" for="symbols">Symbols:</label> <!-- declare a label element with class, an associated element, and its textx content -->
+                    <select class="select" id="symbols"> <!-- declare a select element with class  and id -->
+                        <option value="1">Yes</option> <!-- declare option elements for the above select element -->
+                        <option value="2">No</option>
+                    </select>
+                    <br><br> <!-- declare a line break element -->
+                    <label class="label" for="numbers">Numbers:</label> <!-- declare a label element with class, an associated element, and its text content -->
+                    <select class="select" id="numbers"> <!-- declare a select element with class and id -->
+                        <option value="1">Yes</option> <!-- declare option elements for the above select element -->
+                        <option value="2">No</option>
+                    </select>
+                </div>
+            </div>
+            <hr> <!-- declare a horizontal line element -->
+            <div> <!-- declare a div element -->
+                <button class="passwordbtn" id="pass1-el" onclick="copy1()"></button> <!-- declare button elements with class, id, and onclick event, its outcome and the element's text content -->
+                <button class="passwordbtn" id="pass2-el" onclick="copy2()"></button>
+            </div>
+            <h3 class="copy">* Click on a password to copy</h3> <!-- declare a h3 element with class and its text content -->
+        </div>
+        <script src="index.js"></script> <!-- declare script element with reference to its source -->
+    </body>
+</html>
